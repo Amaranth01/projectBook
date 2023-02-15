@@ -1,3 +1,15 @@
-body {
-    background-color: lightgray;
+.shelf {
+    display: flex;
+    background-image: url("../img/bois.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    height: 25vh;
+    margin-top: 2vh;
 }
+
+h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+}
+

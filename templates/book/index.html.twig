@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos livres{% endblock %}
+
+{% block body %}
+
+    {% for shelf in shelfs %}
+        <div class="shelf">
+
+            {% for category in shelf.category %}
+                <h2>{{ category.name }}</h2>
+                {% for book in category.books %}
+                    <div class="book">
+                        <h3 class="bookTitle">{{ book.title }}</h3>
+                        <p class="author">{{ book.author }}</p>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+
+        </div>
+    {% endfor %}
+
+{% endblock %}
