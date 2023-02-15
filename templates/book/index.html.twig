@@ -8,14 +8,14 @@
         <div class="shelf">
             {% for category in shelf.category %}
                 <h2>{{ category.name }}</h2>
-                <div class="book">
-                    {% for book in category.books %}
-                        <div id="detailsBooks">
-                            <h3 class="bookTitle">{{ book.title }}</h3>
-                            <p class="author">{{ book.author }}</p>
-                        </div>
-                    {% endfor %}
-                </div>
+                    <div class="book">
+                        {% for book in category.books %}
+                            <div id="detailsBooks">
+                                <h3 class="bookTitle">{{ book.title }}</h3>
+                                <p class="author">{{ book.author }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
             {% endfor %}
         </div>
     {% endfor %}

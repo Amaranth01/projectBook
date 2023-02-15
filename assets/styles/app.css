@@ -13,13 +13,14 @@
      justify-content: space-around;
      rotate: 270deg;
      margin-left: -58rem;
+     width: 30rem;
  }
 
 #detailsBooks{
     background-color: #000360;
     border-radius: 5px;
     text-align: center;
-    box-shadow: -7px 0 5px black;
+    box-shadow: -7px 3px 5px black;
 }
 
 .bookTitle {
@@ -31,4 +32,12 @@
 .author {
     color: #f1f1f1;
     margin-right: -1.2rem;
+}
+
+h2 {
+    background-color: #eff6ff;
+    height: 2rem;
+    padding: 0.5rem;
+    border: #000360 2px solid;
+    color: #000360;
 }
